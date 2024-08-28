@@ -10,6 +10,42 @@ Gain more practical experience by using this repository that contains a Python W
 1. Enable your [GitHub Copilot service](https://github.com/github-copilot/signup)
 1. Open [this repository with Codespaces](https://codespaces.new/MicrosoftDocs/mslearn-copilot-codespaces-python)
 
+## 🚀 Getting Started
+
+To get started with this project, follow these steps:
+
+1. Clone the repository to your local machine.
+    ```
+    git clone https://github.com/your-username/your-repository.git
+    ```
+
+2. Install the required dependencies.
+    ```
+    pip install -r requirements.txt
+    ```
+
+3. Start the application.
+    ```
+    python main.py
+    ```
+
+4. Open your web browser and navigate to `http://localhost:8000` to access the application.
+
+That's it! You should now have the project up and running on your local machine.
+
+## 🧪 Running Tests
+
+To run the tests for this project, execute the following command:
+```
+pytest
+```
+
+Make sure you have the required dependencies installed before running the tests.
+
+## 📚 Documentation
+
+For detailed documentation on how to use the API endpoints and explore the available features, please refer to the [API Documentation](/docs) section.
+
 ## 💪🏽 Exercise
 The current API is not exposing country/{country} which needs to be implemented to list cities. The route should allow only GET HTTP requests with a JSON response providing information from the historical high and low for that country, city, and given month.
 

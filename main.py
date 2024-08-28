@@ -23,12 +23,18 @@ def root():
     Allows to open the API documentation in the browser directly instead of
     requiring to open the /docs path.
     """
-    return RedirectResponse(url='/docs', status_code=301)
-
+    return RedirectResponse(url='/docs', status_code=301)    
 
 @app.get('/countries')
 def countries():
     return list(data.keys())
+
+@app.get('/countries/{country}/cities') 
+def cities(country: str):
+    if country in data:
+        return list(data[country].keys())
+    else:
+        return f"No data available for country: {country}"
 
 
 @app.get('/countries/{country}/{city}/{month}')
